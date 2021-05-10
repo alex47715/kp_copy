@@ -1,0 +1,67 @@
+﻿<Window x:Class="KP.pages.AuthorizationFrames.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KP.pages.AuthorizationFrames" xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+        mc:Ignorable="d"
+        Title="Auth" Name="AuthWindow" Height="420" Width="730" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Border CornerRadius="20" Background="#FFFBFCFA">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="1.1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="1" CornerRadius="20">
+                <Border.Background>
+                    <ImageBrush ImageSource="C:\Labs\OOP2\KP\KP\png\auth.png" Stretch="Fill"/>
+                </Border.Background>
+
+            </Border>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"></RowDefinition>
+                    <RowDefinition Height="291*"></RowDefinition>
+                    <RowDefinition Height="38*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0"  BorderThickness="0" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Click="Close_Window" Margin="10,10,314.2,57.6">
+
+                    <Button.Template>
+
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="20"  x:Name="Bd" Background="Transparent">
+                                <Path VerticalAlignment="Bottom" x:Name="Pt" Height="21.7" Width="Auto" Stretch="Uniform" Data="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M256,480
+				C132.288,480,32,379.712,32,256S132.288,32,256,32s224,100.288,224,224S379.712,480,256,480z M292.64,116.8l-128,128c-6.204,6.241-6.204,16.319,0,22.56l128,128l22.56-22.72L198.56,256L315.2,139.36L292.64,116.8z"
+                         Fill="Black" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+
+                                    <Setter TargetName="Pt" Property="Stroke" Value="gray"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Label x:Name="label1" Content="Login" Grid.Row="0" HorizontalAlignment="Left" Height="44" Margin="44,46,0,0" VerticalAlignment="Top" Width="70" FontSize="22" FontWeight="Bold" Grid.RowSpan="2" MouseDown="Login_Click"/>
+                <Line X1="120" Y1="80" X2="120" Y2="55"  Stroke="#FF555ACC" StrokeThickness="3" Margin="0,0,0.2,291.6" Grid.RowSpan="2" />
+                <Label x:Name="label2" Content="Sign In" Grid.Row="0" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="85" FontSize="22" FontWeight="Bold" Margin="128,46,0,0" Grid.RowSpan="2" MouseDown="SignIn_Click" Foreground="Black"/>
+                <Frame x:Name="AuthFrame" NavigationUIVisibility="Hidden" Grid.Row="1" Margin="0,0.4,0.2,0.6" />
+                <Grid Grid.Row="1" Margin="0,271.4,0.2,0" Grid.RowSpan="2">
+                    <StackPanel Orientation="Horizontal" Margin="12,0,0,14">
+                        <svgc:SvgViewbox Source="/png/facebook.svg" Margin="30,0,0,0" MouseDown="Facebook_Click"></svgc:SvgViewbox>
+                        <svgc:SvgViewbox Source="/png/gmail.svg" Margin="30,0,0,0" Width="34" MouseDown="Gmail_Click"></svgc:SvgViewbox>
+                        <svgc:SvgViewbox Source="/png/github.svg" Margin="30,0,0,0" MessageBackground="#FF4343CD" MouseDown="Git_Click"></svgc:SvgViewbox>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+
+
+        </Grid>
+
+    </Border>
+</Window>

@@ -1,0 +1,128 @@
+﻿<Page x:Class="KP.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KP" xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      mc:Ignorable="d" d:DesignWidth="1460"
+      Title="Page1"   Name="mainpage" ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="800" MinWidth="720"  Background="Transparent" >
+    <Border CornerRadius="20"  Background="Black">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" >
+            <Grid  ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Hidden"  Height="2968">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="1623.2"></RowDefinition>
+                    <RowDefinition Height="377"></RowDefinition>
+                    <RowDefinition Height="501"></RowDefinition>
+                    <RowDefinition Height="499"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Line HorizontalAlignment="Right" Y2="0" Y1="{Binding Height,ElementName=mainpage}" StrokeThickness="0.5"></Line>
+
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.1*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="106,59,75.4,1296.2" MinWidth="70" Foreground="White" Text="The world's most popular Bitcoin cryptocurrency portfolio tracker. Now with trading" Grid.Column="0" Grid.ColumnSpan="1" FontSize="48" IsEnabled="False" TextTrimming="WordEllipsis" TextWrapping="Wrap" FontFamily="/KP;component/#Avenir Light"/>
+                    <TextBlock Grid.Column="0" MinWidth="80" FontSize="22" Foreground="#FF979797" Text="Track your portfolio, get Evecript Signal updates from top teams, and buy and sell crypto with zero fees." FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" Margin="106,332,75.4,1185.2"/>
+                    <Button Panel.ZIndex="1000" Content="Sign in" Grid.Column="0"  Foreground="White" FontFamily="/KP;component/#Avenir Light" FontSize="22" Width="253" Height="60" Click="Click_SignIn" Margin="106,462,407.4,1101.2">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#FF2D14A8"></Setter>
+                                <Setter Property="Cursor" Value="Hand"></Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF2136CA"></Setter>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="30" Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <svgc:SvgViewbox Margin="10,205,0.2,298.2" Source="C:\Labs\OOP2\KP\KP\Properties\BackGround.svg"  Grid.ColumnSpan="2" Stretch="UniformToFill"/>
+                    <svgc:SvgViewbox Margin="-204,559,188,0" Stretch="UniformToFill" Source="C:\Labs\OOP2\KP\KP\Elips.svg" RenderTransformOrigin="0.32,-7.42" Grid.ColumnSpan="2" Panel.ZIndex="-1000"/>
+                    <Grid>
+                        <Ellipse Grid.Column="0" Fill="Black" StrokeThickness="1" Width="200" Height="190" Margin="287,1156,273.4,274.2" Stroke="#7400FF" UseLayoutRounding="True">
+                            <Ellipse.Effect>
+                                <DropShadowEffect ShadowDepth="0" BlurRadius="20" Color="#7400FF"/>
+                            </Ellipse.Effect>
+                        </Ellipse>
+                        <TextBlock Text="10,000+" Foreground="White" Margin="309,1210,275.8,345.2" FontSize="50" HorizontalAlignment="Center" FontFamily="Avenir Light"/>
+                        <TextBlock Text="cryptocurrencies" Foreground="#FF979797" Margin="338,1261,301.8,262.2" FontSize="17" HorizontalAlignment="Center" FontFamily="/KP;component/#Avenir Light"/>
+                    </Grid>
+                    <Grid>
+                        <Ellipse Grid.Column="0" Fill="Black" Width="200" Height="190" StrokeThickness="1" Margin="521,1253,43.8,175.2" Stroke="#7400FF" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="True">
+
+                            <Ellipse.Effect>
+                                <DropShadowEffect ShadowDepth="0"   BlurRadius="20" Color="#7400FF"/>
+                            </Ellipse.Effect>
+                        </Ellipse>
+                        <TextBlock Text="500+" Foreground="White" Margin="565,1312,77.8,252.2" FontSize="50" HorizontalAlignment="Center" FontFamily="/KP;component/#Avenir Light"/>
+                        <TextBlock Text="exchanges" Foreground="#FF979797" HorizontalAlignment="Center" Margin="577,1371,92.8,221.2" FontSize="17" FontFamily="/KP;component/#Avenir Light" RenderTransformOrigin="0.663,-0.318"/>
+
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBlock Margin="187,1096,47.2,351.2" Foreground="White" Text="More than 6 million users makes Evecript the most trusted platform for staying connected to the cryptocurrency ecosystem" FontSize="32" TextWrapping="Wrap" FontFamily="/KP;component/#Avenir Light" HorizontalAlignment="Left" VerticalAlignment="Center" Width="461"/>
+                        <TextBlock FontSize="16" Foreground="#FF979797" Text="Support for over 10,000 cryptocurrencies and blockchain assets across 500+ exchanges means the latest prices, market data, team updates, and news are always at your fingertips." FontFamily="/KP;component/#Avenir Light" TextWrapping="Wrap"  HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="187,1276,72.2,281.2"/>
+                    </Grid>
+
+
+                </Grid>
+                <Grid Grid.Row="2" Background="#121517" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="KEY FEATURES" Foreground="White" Margin="348,102,398.4,285" FontSize="13" FontFamily="/KP;component/#Avenir Light"/>
+                    <TextBlock Grid.Column="0" Text="The easiest way to discover, track, and manage your cryptocurrency investments" Foreground="#FFEAEAEA" Margin="348,119,197,154.8" TextWrapping="WrapWithOverflow" FontSize="24" FontFamily="/KP;component/#Avenir Light" TextTrimming="WordEllipsis"/>
+                    <TextBlock Grid.Column="0" Text="Stay up to date with exchange and global average pricing as you organize your holdings and watch lists across an unlimited number of portfolios." Foreground="#FF979797" Margin="348,227,161.4,84" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" FontSize="16" FontFamily="/KP;component/#Avenir Black"/>
+                    <Image Source="C:\Labs\OOP2\KP\KP\Phone.jpg" Margin="160,28,244.4,31.8" Grid.Column="1"/>
+                </Grid>
+                <Grid Grid.Row="3"  Grid.RowSpan="2" Background="#FF060608">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.7*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <svgc:SvgViewbox Source="C:\Labs\OOP2\KP\KP\png\BubbleBackground.svg" RenderTransformOrigin="0.32,-7.42" Margin="0,0,0,502" Stretch="Uniform" />
+                    <TextBlock Grid.Column="0" Text="Connect to Evecript with your favorite messaging apps" Foreground="#EAEAEA" Margin="366,113,74,776" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" FontSize="32" FontFamily="/KP;component/#Avenir Light"/>
+                    <TextBlock Grid.Column="0" Foreground="#979797" Text="Automatically receive the latest real-time Evecript Signal updates and pricing straight to your Slack groups" Margin="366,229,93,698" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" FontSize="16" FontFamily="/KP;component/#Avenir Light"/>
+                    <Image Source="C:\Labs\OOP2\KP\KP\png\Cube.jpg" Stretch="Uniform" Margin="0,0,0,502" Grid.Column="1"/>
+                    <svgc:SvgViewbox Source="C:\Labs\OOP2\KP\KP\png\slackLogo.svg" RenderTransformOrigin="0.32,-7.42" Margin="390,381,360.4,82.8" Width="96" Height="25" />
+
+                </Grid>
+                <Grid Grid.Row="4" Background="#FF121517" Margin="0,0.2,0.4,16" >
+                    <Grid.RowDefinitions>
+
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="OUR COMMITMENT AND ETHOS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontFamily="/KP;component/#Avenir Light" Margin="0,65,0,0">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF0742A5" Offset="1"/>
+                                    <GradientStop Color="#FFA94BD7" Offset="0.249"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground></TextBlock>
+                        <TextBlock Padding="5" Text="Evecript takes a user first approach and is committed to providing the best products to help the advancement of the decentralized movement and ecosystem." Foreground="#A4A4A4" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="421,20,401.2,0" Width="617" FontSize="24" FontFamily="/KP;component/#Avenir Light" UseLayoutRounding="True"/>
+                        <TextBlock Padding="5" Text="At Evecript, we believe that market data and information should be freely available for the benefit of the ecosystem. We are committed to always providing our services 100% free of charge to our end users." Foreground="#A4A4A4" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="617" FontSize="24" FontFamily="/KP;component/#Avenir Light"  Height="157" Margin="421,35,401.2,0" UseLayoutRounding="True"/>
+                        <Line Grid.Row="4" Stroke="White" X1="1500" Y2="30" Y1="30"  StrokeThickness="0.5"></Line>
+                        <WrapPanel/>
+
+                    </StackPanel>
+                </Grid>
+
+
+
+
+            </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>

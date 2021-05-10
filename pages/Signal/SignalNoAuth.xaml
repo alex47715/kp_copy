@@ -1,0 +1,316 @@
+﻿<Page x:Class="KP.pages.Signal.SignalNoAuth"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="SignalNoAuth" Name="signalnoauth" ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="6000" MinWidth="1462"  Background="Transparent">
+    <Border CornerRadius="20"  Background="Black">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True" >
+            <Grid Height="5813" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="466"></RowDefinition>
+                    <RowDefinition Height="39"></RowDefinition>
+                    <RowDefinition Height="1468"></RowDefinition>
+                    <RowDefinition Height="862"></RowDefinition>
+                    <RowDefinition Height="438.4"></RowDefinition>
+                    <RowDefinition Height="2100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" ScrollViewer.CanContentScroll="True" Margin="0,0,0.4,0.4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Grid.Row="0">
+                        <Grid Grid.Row="0" Grid.Column="0" Height="422" ScrollViewer.CanContentScroll="True">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBlock  Grid.Row="0" Text="Evecript exclusive signals." Foreground="White" FontSize="48" FontFamily="/KP;component/#Avenir Light"  Padding="70,50,0,0" Height="135" Margin="0,76,0.2,0.2"/>
+                            <TextBlock Foreground="#FF979797"  TextWrapping="WrapWithOverflow" FontSize="22" FontFamily="/KP;component/#Avenir Light" Padding="70,0,0,0" Margin="0,211,0,115.4" Grid.RowSpan="2"><Run Text="Evecript"/><Run Text=" Signal is a first-of-its-kind communications platform "/><LineBreak/><Run Text="built exclusively for token teams to connect and engage with "/><LineBreak/><Run Text="their communities."/></TextBlock>
+                            <Button  Content="Join for free" Grid.Row="1" Width="270.4"   Foreground="White" FontFamily="/KP;component/#Avenir Light" FontSize="22" HorizontalAlignment="Right" Margin="0,137.9,387,10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" UseLayoutRounding="False"  Click="Join_Click">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="#FFC83E78"></Setter>
+                                        <Setter Property="Cursor" Value="Hand"></Setter>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#FFE55C96"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="30" Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+
+                            </Button>
+                        </Grid>
+                    </StackPanel>
+                    <svgc:SvgViewbox Grid.Column="1" Source="/png/SignalAnten.svg" Stretch="Uniform" Margin="59.8,60,60.4,71.4"></svgc:SvgViewbox>
+                </Grid>
+
+
+                <svgc:SvgViewbox Opacity="0.6" Source="/png/SignalCircle.svg" Stretch="Uniform" Grid.RowSpan="2" Panel.ZIndex="-100" Margin="-511,-259,-831.6,7.6"/>
+                <svgc:SvgViewbox Source="/png/topCircleyLines.svg" Stretch="UniformToFill" Grid.RowSpan="3" Margin="-861,106,-657.6,1066.6" Panel.ZIndex="-100"  />
+
+                <Grid Grid.Row="1" ScrollViewer.CanContentScroll="True" Margin="0,0.6,0.4,1.6">
+                    <DockPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <svgc:SvgViewbox Grid.Column="0" Source="/IconsMarket/ADA.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="1" Source="/IconsMarket/ATOM.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="2" Source="/IconsMarket/BCH.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="3" Source="/IconsMarket/BNB.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="4" Source="/IconsMarket/BTC.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="5" Source="/IconsMarket/DOT.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="6" Source="/IconsMarket/EOS.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="7" Source="/IconsMarket/ETH.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="8" Source="/IconsMarket/HT.svg" Stretch="Uniform"  HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="9" Source="/IconsMarket/IOTA.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="10" Source="/IconsMarket/LINK.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="11" Source="/IconsMarket/TRX.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="12" Source="/IconsMarket/UNI.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="13" Source="/IconsMarket/USDC.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="14" Source="/IconsMarket/USDT.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="15" Source="/IconsMarket/VET.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="16" Source="/IconsMarket/WBTC.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="17" Source="/IconsMarket/XEM.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="18" Source="/IconsMarket/XLM.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="19" Source="/IconsMarket/XMR.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="20" Source="/IconsMarket/XRP.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+                            <svgc:SvgViewbox Grid.Column="21" Source="/IconsMarket/DOGE.svg" Stretch="Uniform" HorizontalAlignment="Center"></svgc:SvgViewbox>
+
+                        </Grid>
+                    </DockPanel>
+                </Grid>
+                <Grid Grid.Row="2" ScrollViewer.CanContentScroll="True" Margin="0,0.4,0.4,414" Grid.RowSpan="2">
+                    <Grid ScrollViewer.CanContentScroll="True">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.2*"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Reach" FontSize="24" Foreground="White" Margin="302,186,412.6,257.6"  />
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="More signal users" Foreground="#FFC83E78" FontSize="61" Margin="302,212,9.6,180.2" Padding="0" />
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="than all other platforms combined" FontSize="24" Foreground="White" Margin="302,294,55.6,153.6"/>
+
+                            <Line Grid.Row="0" Grid.Column="0"  X1="0" Y1="0" X2="1011.2" Y2="0" Stroke="#c83e78" StrokeThickness="2.5" Margin="326,484,125.4,-5.8" Grid.ColumnSpan="2" />
+                            <Line Grid.Row="0" Grid.Column="0"  X1="0" Y1="0" X2="637" Y2="0" Stroke="Orange" StrokeThickness="5" Margin="359,0,412.6,1.6"  VerticalAlignment="Bottom">
+                                <Line.Effect>
+                                    <DropShadowEffect BlurRadius="30" Color="White" ShadowDepth="0" ></DropShadowEffect>
+                                </Line.Effect>
+                            </Line>
+                            <svgc:SvgViewbox Source="/png/coinStatsDirect.svg" Stretch="Uniform" Margin="344,396,396.6,35.6"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="Coin Stats Direct" FontSize="14" FontFamily="/KP;component/#Avenir Light" Margin="325,359,360.6,90.2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"/>
+                            <Line Grid.Row="0" Grid.Column="0"  X1="0" Y1="0" X2="637" Y2="0" Stroke="#8cc63f" StrokeThickness="5" Margin="555,0,216.6,1.6"  VerticalAlignment="Bottom" >
+                                <Line.Effect>
+                                    <DropShadowEffect BlurRadius="30" Color="White" ShadowDepth="0"></DropShadowEffect>
+                                </Line.Effect>
+                            </Line>
+                            <svgc:SvgViewbox Source="/png/coinGeckoBeam.svg" Stretch="Uniform" Margin="540,396,200.6,35.6"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="CoinGecko Beam" FontSize="14" FontFamily="/KP;component/#Avenir Light" Margin="510,358,167.6,90.2" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Height="31"/>
+                            <Line Grid.Row="0" Grid.Column="0"  X1="0" Y1="0" X2="637" Y2="0" Stroke="#364456" StrokeThickness="40" Margin="747,0,24.6,1.6"  VerticalAlignment="Bottom" >
+                                <Line.Effect>
+                                    <DropShadowEffect BlurRadius="30" Color="White" ShadowDepth="0"></DropShadowEffect>
+                                </Line.Effect>
+                            </Line>
+                            <svgc:SvgViewbox Source="/png/deltaDirect.svg" Stretch="Uniform" Margin="731,357,9.6,74.6"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="Delta Direct" FontSize="13" FontFamily="/KP;component/#Avenir Light" Margin="717,327,1.6,127.2" Foreground="White" Width="79" VerticalAlignment="Center" HorizontalAlignment="Center" Height="25"  />
+                            <Line Grid.Row="0" Grid.Column="1"  X1="0" Y1="0" X2="637" Y2="0" Stroke="#1e457c" StrokeThickness="40" Margin="154.4,0,484.4,1.6"  VerticalAlignment="Bottom" >
+                                <Line.Effect>
+                                    <DropShadowEffect BlurRadius="30" Color="White" ShadowDepth="0"></DropShadowEffect>
+                                </Line.Effect>
+                            </Line>
+                            <svgc:SvgViewbox Source="/png/bitUniverseLink.svg" Stretch="Uniform" Margin="138.4,357,469.4,74.6" Grid.Column="1"/>
+                            <Label Grid.Row="0" Grid.Column="1" Content="BitUniverse Link" FontSize="14" FontFamily="/KP;component/#Avenir Light" Margin="115.4,327,436.4,126.2" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Width="113" Height="26"/>
+                            <Line Grid.Row="0" Grid.Column="1"  X1="0" Y1="0" X2="637" Y2="0" StrokeThickness="280" Margin="362.4,0,276.4,1.6"  VerticalAlignment="Bottom" >
+                                <Line.Stroke>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF764BA2" Offset="1"/>
+                                        <GradientStop Color="#FFC83E78"/>
+                                    </LinearGradientBrush>
+                                </Line.Stroke>
+                                <Line.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFC83E78" Offset="0"/>
+                                        <GradientStop Color="#FF764BA2" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Line.Fill>
+                                <Line.Effect>
+                                    <DropShadowEffect BlurRadius="30" ShadowDepth="0" Color="White"/>
+                                </Line.Effect>
+                            </Line>
+                            <svgc:SvgViewbox Source="/png/atlassian.svg" Stretch="Uniform" Margin="347.4,124,260.4,307.6" Grid.Column="1"/>
+                            <Label Grid.Row="0" Grid.Column="1" Content="Evecript signal" FontSize="14" FontFamily="/KP;component/#Avenir Light" Margin="327.4,92,224.4,361.6" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Width="113" Height="32"/>
+
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Height="171" Text="Largest reach" Foreground="#FFEAEAEA" FontSize="36" FontFamily="/KP;component/#Avenir Light" Padding="302,120,0,0" Margin="0,0,0.2,0" FontWeight="Bold" />
+                                <TextBlock Height="116" Text="Over 6 million people trust Blockfolio for managing their cryptocurrency portfolios and getting the latest prices, news, and team updates." Foreground="#FFEAEAEA" TextTrimming="WordEllipsis" Margin="304,0,105.2,0" FontSize="16" TextWrapping="WrapWithOverflow" Padding="0,6,0,0"/>
+                            </StackPanel>
+                            <Grid Grid.Column="1">
+                                <Ellipse Fill="Black"  StrokeThickness="1" Width="288" Height="288" Stroke="#9d458e" UseLayoutRounding="True" Margin="98,49,345.2,142.2">
+                                    <Ellipse.Effect>
+                                        <DropShadowEffect ShadowDepth="0"  BlurRadius="20" Color="#9d458e"/>
+                                    </Ellipse.Effect>
+                                </Ellipse>
+                                <TextBlock Text="6 million" Foreground="#FFC8CACC" FontSize="48" FontFamily="/KP;component/#Avenir Light" Margin="142,142,409.2,271.2" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                                <TextBlock Text="users" Foreground="#FF979797" FontSize="28" FontFamily="/KP;component/#Avenir Light" Margin="204,199,462.2,220.2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60"></TextBlock>
+
+                            </Grid>
+
+
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Height="221" Foreground="#FFEAEAEA" FontSize="36" FontFamily="/KP;component/#Avenir Light" Padding="230,120,0,0" Margin="0" FontWeight="Bold" TextWrapping="WrapWithOverflow" ><Run Text="Establish a direct line to "/><LineBreak/><Run Text="your most engaged users"/></TextBlock>
+                                <TextBlock Height="116" Text="Instantly connect with your token base, the people who care most about what you have to say." Foreground="#FFEAEAEA" TextTrimming="WordEllipsis" Margin="230,0,164.2,0" FontSize="16" TextWrapping="WrapWithOverflow" Padding="0,6,0,0"/>
+                            </StackPanel>
+                            <Grid Grid.Column="0">
+                                <Ellipse Fill="Black"  StrokeThickness="1" Width="288" Height="288" Stroke="#9d458e" UseLayoutRounding="True" Margin="386,55,57.2,136.2">
+                                    <Ellipse.Effect>
+                                        <DropShadowEffect ShadowDepth="0"  BlurRadius="20" Color="#9d458e"/>
+                                    </Ellipse.Effect>
+                                </Ellipse>
+                                <TextBlock Text="used more than" Foreground="#FF979797" FontSize="24" FontFamily="/KP;component/#Avenir Light" Margin="448,155,105.2,291.2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="178"></TextBlock>
+                                <TextBlock Text="8x per day" Foreground="#FFC8CACC" FontSize="41" FontFamily="/KP;component/#Avenir Light" Margin="435,183,93.2,236.2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" Width="203"></TextBlock>
+
+                            </Grid>
+                            <svgc:SvgViewbox Panel.ZIndex="-100" Source="/png/bottomCircleyLines.svg" Stretch="UniformToFill" Margin="-974,-149,-73.6,-1216.8" Grid.ColumnSpan="2"></svgc:SvgViewbox>
+
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Height="218" Text="Trusted by the best teams in our ecosystem" Foreground="#FFEAEAEA" FontSize="36" FontFamily="/KP;component/#Avenir Light" Padding="302,120,0,0" Margin="0,0,0.2,0" FontWeight="Bold" TextWrapping="WrapWithOverflow" />
+                                <TextBlock Height="116" Text="Over 500 team leaders actively broadcast on Signal, including leaders from Monero, DASH, NEO, Ethereum Classic, NEM, ZCash, Maker, 0x, Decred, Ontology, Kyber Network and many more." Foreground="#FFEAEAEA" TextTrimming="WordEllipsis" Margin="304,0,105.2,0" FontSize="16" TextWrapping="WrapWithOverflow" Padding="0,6,0,0"/>
+
+                            </StackPanel>
+                            <svgc:SvgViewbox Source="/png/tokenTeamCloud.svg" Grid.Column="1" Stretch="Uniform" Margin="95.8,50,72.4,51.4"></svgc:SvgViewbox>
+                        </Grid>
+
+
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="4" Margin="0,0,0.4,0.4" Background="#FF121517"  >
+                    <StackPanel>
+                        <TextBlock Height="219" Text="1 0 0 +" FontFamily="/KP;component/#Avenir Light" FontSize="96" Foreground="#FFEAEAEA" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="0,100,0,0"></TextBlock>
+                        <TextBlock Height="213" Text="T  E  A  M  S    ON    E  V  E  C  R  I  P  T     S  I  G  N  A  L" FontSize="18" FontFamily="/KP;component/#Avenir Light" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF764BA2" Offset="0"/>
+                                    <GradientStop Color="#FFC83E78" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground></TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"></RowDefinition>
+                        <RowDefinition Height="679"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                        <RowDefinition Height="300"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Community Made Simple" FontSize="40" FontFamily="/KP;component/#Avenir Light" Foreground="#FFEAEAEA" Padding="510,30,0,0" Margin="0,0,0,87.8" Grid.RowSpan="2"></TextBlock>
+                        <TextBlock Text="Cut through the noise and ensure your message is delivered directly to the people waiting to hear it." FontSize="22" FontFamily="/KP;component/#Avenir Light" Foreground="#FF979797" Padding="500,0,450,0" TextWrapping="WrapWithOverflow" Margin="0,0.6,0,-0.2" Grid.Row="1" Height="102" VerticalAlignment="Top"/>
+                    </Grid>
+                    <Grid Grid.Row="1" >
+                        <svgc:SvgViewbox Source="/png/signalScreen.svg" Stretch="Uniform"></svgc:SvgViewbox>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Instantly Alert Your Supporters" FontSize="24" Foreground="#EAFFFFFF" Panel.ZIndex="100" Padding="430,120,0,0" FontFamily="/KP;component/#Avenir Light"  ></TextBlock>
+                        <TextBlock Grid.Row="1" Text="Notify your entire community immediately with push notifications for important Signals. It's all in your control." FontSize="16" Foreground="#FF979797" Panel.ZIndex="100" Padding="430,0,710,0" FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow"  ></TextBlock>
+                        <svgc:SvgViewbox Source="/png/circlesExclamation.svg" Stretch="Uniform" Margin="65,-89,976.4,-121.2" Grid.RowSpan="2"></svgc:SvgViewbox>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Automatically Grow Your Reach" FontSize="24" Foreground="#EAFFFFFF" Panel.ZIndex="1000" Padding="900,110,0,0" FontFamily="/KP;component/#Avenir Light"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="New users who add your token to their portfolio automatically receive Signals from your team. No effort required." FontSize="16" Foreground="#FF979797" Panel.ZIndex="100" Padding="900,0,329,0" FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow"  ></TextBlock>
+                        <svgc:SvgViewbox Source="/png/circlesGrowing.svg" Stretch="Uniform" Margin="528,-118,513.4,-155.2" Grid.RowSpan="2"></svgc:SvgViewbox>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Maximum Credibility" FontSize="24" Foreground="#EAFFFFFF" Panel.ZIndex="100" Padding="430,120,0,0" FontFamily="/KP;component/#Avenir Light"  ></TextBlock>
+                        <TextBlock Grid.Row="1" Text="Signals are always attributed to senior level members of your team to ensure the highest level of credibility in the information being broadcast." FontSize="16" Foreground="#FF979797" Panel.ZIndex="100" Padding="430,7,710,0" FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow"  ></TextBlock>
+                        <svgc:SvgViewbox Source="/png/circlesCheck.svg" Stretch="Uniform" Margin="62,-103,979.4,-150.2" Grid.RowSpan="2"></svgc:SvgViewbox>
+                    </Grid>
+                    <Grid Grid.Row="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Built By Token Team Leaders For Token Team" FontSize="24" Foreground="#EAFFFFFF" Panel.ZIndex="1000" Padding="900,50,350,0" FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="The roots of Evecript stem from early leaders of open source projects like Dash. We deeply understand the unique community building needs that token projects have." FontSize="16" Foreground="#FF979797" Panel.ZIndex="100" Padding="900,0,329,0" FontFamily="/KP;component/#Avenir Light" TextWrapping="WrapWithOverflow"  ></TextBlock>
+                        <svgc:SvgViewbox Source="/png/circlesTokens.svg" Stretch="Uniform" Margin="508,-72,533.4,-125.2" Grid.RowSpan="2"></svgc:SvgViewbox>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>
